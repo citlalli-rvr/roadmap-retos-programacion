@@ -1,0 +1,13 @@
+# https://www.python.org/
+#esto es un comentario simple en python
+"""
+esto es un 
+comentario
+en bloque 
+"""
+
+mi_variable= "Variable"
+
+MI_CONSTANTE= "mi constante" #no existen constantes, pero se indican con mayusculas 
+
+my_
