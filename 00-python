@@ -1,4 +1,5 @@
 # https://www.python.org/
+#https://medium.com/@diego.coder/variables-y-tipos-de-datos-en-python-str-int-bool-etc-45ac17e6acc7
 #esto es un comentario simple en python
 """
 esto es un 
@@ -9,5 +10,12 @@ en bloque
 mi_variable= "Variable"
 
 MI_CONSTANTE= "mi constante" #no existen constantes, pero se indican con mayusculas 
+"""
+Los datos prmitivos en python son 
+Strings--> representa cadena de texto, inmutables
+   --> métodos y propiedades para trabajarlas:
+         °len()- longitud de la cadena
+         °upper() lower()- conversion mayusculas y minusculas 
 
+Integers--> 
 my_
