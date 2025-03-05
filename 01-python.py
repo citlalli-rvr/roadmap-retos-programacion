@@ -59,11 +59,85 @@ print(~num2) #obtienes los bits de num2 invertidos
 
 
 #operadores de pertenencia
-#comprobar si un valor o variable se encuentra en una secuencia
+#se emplea para identificar pertenencia en alguna secuencia (listas,strings,tuplas)
+a=[1,2,3,4,5]
+
+print 3 in a # in devuelve True si el valor se encuentra en la secuencia, False si es lo contrario
+print 12 not in a #True si el valor no se encuentra en la secuencia, False al contrario
+
+str= "Hola mundo"
+print "Hola" in str
 
 #operadores de identidad
+# comprobar si dos variables emplean la misma ubicación en memoria
+a= 3
+b= 3
+c= 4
+
+print a is b #muestra true
+print a is not b #muestra false
+print a is not c #muestra True
+
 
 #Estructuras de control
+  #permiten modificar le flujo de la ejecución de un conjunto de instrucciones
+    #control secuencia
+    #control de selección
+    #control de repetición
+
+#ESTRUCTURAS DE SELECCIÓN
+
+#sentencia if
+#permite ejecutar un bloque de código si cumple una condición
+a= 3
+b=3
+c= 4
+d=4
+
+if a is b:
+  print("Las variablesa y b emplean la misma ubicación")
+elif a is not c:
+  print ("Las variables a y c no emplean la misma ubicación")
+else:
+  (" las variables a y b no emplean la misma ubicación de memoria")
+
+#ESTRUCTURAS DE REPETICIÓN
+
+#ciclo for
+#se conoce el número de iteraciones a realizar 
+#for VAR  in SECUENCIA--> variable del ciclo/control y secuencia de valores a iterar
+letras=[1,2,3,4,5]
+for l in letras:
+  l +=3
+  print (l)
+
+#ciclos anidados
+  #ciclo for dentro de otro
+
+informacion=[[1,3],[7,9,8].[3,1,6]]
+for fila in informacion:
+  for num in fila:
+    num /=2
+    print(num)
+#desempaquetar valores
+num= [(1,2),(3,4),(5,6),(7,8)]
+
+for x,y in num:
+  print (f"impar {x} par= {y}")
+
+for x, y in num:
+  print (x>y or y>x)
+  print (y<x and y>x)
+
+
+#ciclo while
+ #ejecuta un bloque de instrucciones mientras haya una condición que se cumpla
+  #while condicion:
+x= 2
+while x < 6:
+  print (
+
+
 
 
 
