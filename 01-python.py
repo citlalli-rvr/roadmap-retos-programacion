@@ -133,14 +133,45 @@ for x, y in num:
 #ciclo while
  #ejecuta un bloque de instrucciones mientras haya una condición que se cumpla
   #while condicion:
-x= 2
-while x < 6:
-  print (
+x=1
+y=1
+print("prueba con operadores logicos") 
+while x> 0 and y < 6:
+  print(f"{x}:{y}")
+  x+=1
+  y+=2
 
+#sentencia try-except 
+#manejo de excepciones especificas
+#Sintaxis
+#try
+  #código que puede generar una excepción
+  #si ocurre una excepción aquí, el control se transfiere al bloque except
+#except ExcepcionX:
+  #Código que maneja la excepción de tipo ExcepcionX
 
+a = int(input("Ingrese un número entero: "))
+b = int(input("Ingrese otro número entero: "))
 
+try:
+    c = a / b 
+except ZeroDivisionError:
+    print("Estás intentando dividir por cero")
+#TIPOS DE ERRORES
+# SyntaxError--> error de sintaxis 
+#IndetationError--> error de identación
+#TypeError-->  tipo de dato incompatible 
+#NameError--> implementación de variable no definida previamente 
+#ValueError--> error en el valor de una argumento que recibe una función
+#IndexError--> indice fuera de rango
 
+# EXTRA 
+#Crea un programa que imprima por consola todos los números comprendidos
+ #entre 10 y 55 (incluidos), pares, y que no son ni el 16 ni múltiplos de 3.
 
+for x in range (1,56):
+  if x %2 ==0 and x %3 !=0 and x !=16:
+    print (x)
 
 
 
