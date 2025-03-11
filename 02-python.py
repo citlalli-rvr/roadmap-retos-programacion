@@ -6,6 +6,17 @@
 
 
 #FUNCIONES INTEGRADAS MAS COMUNES 
+
+#hex(x) recibe numero decimal y devuelve en hexadeximal con el prefijo 0x
+print(hex(255))
+print(hex(-42))
+#filtrado de esta funcion (quitar prefijo y pasar a mayusculas)
+print(f"{255:#x}",f"{255:x}",f"{255:X}")
+
+#dirección de memoria
+z=2
+print(id(z))
+
 print("Imprime un mensaje en consola"))
 lista=[2,4,5,6,8]
 print(len(lista))
@@ -38,6 +49,76 @@ def es_par(num):
 numeros=[1,2,3,4,5]
 pares=filter(es_par, numeros) #implementa de filtro otra función
 print(list(pares))
+
+#FUNCIONES CREADAS POR EL USUARIO
+  #return para devolver un valoro varios (separados por coma) 
+  # valor predeterminado--> a devolver "None", especificar en parametros de funcion
+  #función sin parametros o retorno de valores
+  #parametros a recibir= parametros colocados en la definición de la función
+
+
+def fun_01():
+  print("función sin parametros")
+
+fun_01()
+  #Función con un parametro
+def fun_02(valor):
+  print("Parametro recibido: " + valor)
+
+fun_02("hii")
+
+  #función con multiples parámetros con una sentencia de retorno
+def potencia(val1,val2):
+  return val1** val2
+
+potencia(2,3)
+
+#valores predeterminados
+def suma(a, b=3): #si no se ingresa le valor se toma el predeterminado
+  return a + b
+
+print(suma(2,5))
+print(suma(2))
+
+#manipulación como objetos
+  #asignar la función a una variable y emplear dicha variable como la función
+s= suma 
+print(s(1,2)) 
+
+#variables locales
+  #definidas dentro de la funcion 
+
+def doble(valor):
+  x=valor*2
+  return x
+  
+print(x) #x sin definir debido a que es local
+print(doble(3))
+
+#funciones con cantidad variable de parametros
+def promedio (*numeros): #tupla cuya longitud depende de los argumentos ingresados
+  suma=0
+  k=0
+  for n in numeros:
+    suma += n
+    k += 1
+  return suma/k
+print(promedio(10,7,8,9))
+print(promedio(8,9))
+
+#funciones y orden de los argumentos
+
+def cuenta(frase, letra):
+  k=0
+  for car in frase:
+    if car is letra:
+      k+=1
+  return k
+    #proporcionando parametros en funcion de su nombre
+print(cuenta("buen día grupo", "u"))
+print(cuenta(frase="les tengo noticias", letra="e"))
+print(cuenta(letra="i", frase= "colibri"))
+
 
 
 
