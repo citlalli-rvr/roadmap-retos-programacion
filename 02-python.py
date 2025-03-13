@@ -111,7 +111,7 @@ print(promedio(8,9))
 def cuenta(frase, letra):
   k=0
   for car in frase:
-    if car is letra:
+    if car == letra:
       k+=1
   return k
     #proporcionando parametros en funcion de su nombre
@@ -119,7 +119,26 @@ print(cuenta("buen día grupo", "u"))
 print(cuenta(frase="les tengo noticias", letra="e"))
 print(cuenta(letra="i", frase= "colibri"))
 
+#FUNCIONES ANIDADAS
+  #Crear la función externa.
+  #Definir la función interna dentro de la función externa.
+  #Llamar a la función interna dentro de la función externa o devolverla.
+    #crear funciones dentro de otras
+    #mejoran legibilidad y la modularizacion del código 
+def principal(x): #x=3
+  def secundaria(y): # funcion interna
+    return x+y  #usa 'x' de la funcion externa 
+  return secundaria #devuelve la funcion secundaria (no su resultado)
+  
+funcion= principal (3) #devuelve "secundaria", con 'x' almacenado 
+#asignarla a una variable para poder emplearla despues
+print(principal(2)) #Ejecuta 'secundaria(2)', donde x=3 y y=2--> 3+2 =5
 
+
+#EXTRA
+def convertir (texto1: str, texto2: str)-->int:
+  
+  
 
 
 
