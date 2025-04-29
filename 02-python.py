@@ -136,8 +136,26 @@ print(principal(2)) #Ejecuta 'secundaria(2)', donde x=3 y y=2--> 3+2 =5
 
 
 #EXTRA
-def convertir (texto1: str, texto2: str)-->int:
-  
+#Olvidabas considerar el orden de ejecución de código 
+#considerar la impresión de i con incremento el for unicamente es tu rango/limite
+#autoevaluación 6.5
+def convertir (texto1, texto2)->int:
+  conteo= 0
+  for i in range (1,101):
+    if i % 3==0 and i % 5==0:
+     print(texto1 + texto2)
+    elif i % 3==0:
+      print (texto1)
+    elif i % 5==0:
+      print (texto2)
+    else:
+      print (i)
+      conteo += 1
+  return conteo
+
+
+
+print(convertir("Hola3","Hola5"))
   
 
 
