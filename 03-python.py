@@ -3,6 +3,7 @@
 #operaciones de inserción, borrado, actualización y ordenación
 
 #consultar: https://docs.python.org/es/3/tutorial/datastructures.html
+#https://aprendepython.es/core/datastructures/lists/
 
 #Listas
 #compuesta por cero o más elementos
